@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lampu On/Off Sederhana</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #lampu {
+      width: 150px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Lampu On / Off Sederhana</h2>
+
+  <!-- Gambar lampu -->
+  <img id="lampu" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="lamp off">
+
+  <br>
+
+  <!-- Tombol ON -->
+  <button onclick="lampuOn()" style="background: lightgreen;">ON</button>
+
+  <!-- Tombol OFF -->
+  <button onclick="lampuOff()" style="background: lightcoral;">OFF</button>
+
+  <script>
+    function lampuOn() {
+      document.getElementById("lampu").src = "https://www.w3schools.com/js/pic_bulbon.gif";
+    }
+
+    function lampuOff() {
+      document.getElementById("lampu").src = "https://www.w3schools.com/js/pic_bulboff.gif";
+    }
+  </script>
+
+</body>
+</html>
